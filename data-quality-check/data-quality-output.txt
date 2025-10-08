@@ -1,0 +1,53 @@
+
+df = pd.read_csv('D:\\Projects\\Taxi-Trip-Data-NYC-Kaggle\\taxi_tripdata.csv')
+File 'taxi_tripdata.csv' loaded successfully.
+Dataset shape: (83691, 20)
+
+--- Checking for Null Values ---
+Null values found in the following columns:
+VendorID                32518
+store_and_fwd_flag      32518
+RatecodeID              32518
+passenger_count         32518
+ehail_fee               83691
+payment_type            32518
+trip_type               32518
+congestion_surcharge    32518
+dtype: int64
+
+--- Checking for Data Inconsistencies ---
+
+Number of trips with zero distance but a positive fare: 3261
+
+Passenger count distribution:
+passenger_count
+0.0        56
+1.0     44127
+2.0      3922
+3.0       626
+4.0       181
+5.0      1240
+6.0      1018
+7.0         2
+32.0        1
+Name: count, dtype: int64
+
+Number of trips with negative fare_amount: 145
+
+--- Checking for Standardization Needs ---
+
+Unique values for 'store_and_fwd_flag':
+store_and_fwd_flag
+N    50977
+Y      196
+Name: count, dtype: int64
+
+Unique values for 'payment_type' (numeric codes):
+payment_type
+1.0    29990
+2.0    20831
+3.0      307
+4.0       44
+5.0        1
+Name: count, dtype: int64
+PS D:\Projects\Taxi-Trip-Data-NYC-Kaggle\data-quality-check> 
