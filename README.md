@@ -115,3 +115,4 @@ The final step is to leverage the model. The queries in `04_analysis_queries.sql
 * What is the average fare and total revenue by payment type?
 * What are the busiest hours of the day for taxi pickups?
 * How does trip distance and revenue vary by special rate codes (e.g., airport trips)?
+* What is the average tip amount for credit card payments?
